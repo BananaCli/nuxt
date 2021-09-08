@@ -1,0 +1,64 @@
+{
+  "name": "beedit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"node checkCommit.js"
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/proxy": "^2.1.0",
+    "ant-design-vue": "^1.7.6",
+    "axios": "^0.21.1",
+    "core-js": "^3.15.1",
+    "element-ui": "^2.15.4",
+    "js-cookie": "^3.0.0",
+    "js-md5": "^0.7.3",
+    "marked": "^3.0.0",
+    "mockjs": "^1.1.0",
+    "nuxt": "^2.15.7",
+    "qiniu": "^7.4.0",
+    "qiniu-js": "^3.3.3",
+    "qrcodejs2": "0.0.2",
+    "qs": "^6.10.1",
+    "social-share.js": "^1.0.16",
+    "swiper": "^5.4.5",
+    "vue-social-share": "0.0.3",
+    "vue-socialmedia-share": "^1.0.1",
+    "webpack-bundle-analyzer": "^4.4.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.2.0",
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/test-utils": "^1.2.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.5",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.13.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.17.0",
+    "husky": "^7.0.2",
+    "jest": "^27.0.5",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.2.0",
+    "scss-loader": "0.0.1",
+    "vue-jest": "^3.0.4"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3090"
+    }
+  }
+}
